@@ -2,7 +2,8 @@
 import React from "react";
 import Slider from "../components/Slider";
 import Gallery from "./Gallery";
-import { FaStar, FaRegStar, FaStarHalfAlt, FaUserCircle } from "react-icons/fa";
+import Services from "./Services";
+import Facilities from "./Facilities";import { FaStar, FaRegStar, FaStarHalfAlt, FaUserCircle } from "react-icons/fa";
 
 const Home = () => {
   const reviews = [
@@ -72,7 +73,15 @@ const Home = () => {
         <section className="mb-12">
           <Gallery />
         </section>
-
+        {/* Services */}
+        <section className="mb-12">
+          <Services />
+        </section>
+        {/* Facilities */}
+        <section className="mb-20">
+          <Facilities />
+        </section>
+        
         {/* Testimonials */}
         <section className="mb-20">
           <h2 className="text-3xl font-bold text-center text-white mb-12">
