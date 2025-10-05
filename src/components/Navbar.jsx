@@ -1,6 +1,6 @@
 // components/Navbar.jsx
 import React, { useState } from 'react';
-import { NavLink, Link, useNavigate } from 'react-router-dom';
+import { NavLink, Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav className="bg-black fixed top-0 w-full z-50">
-      <nav className="bg-black text-white shadow-xl border-b border-gray-800">
+      <nav className="bg-black text-white shadow-xl border-b border-red-600">
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-4">
             {/* Logo */}
@@ -36,7 +36,7 @@ const Navbar = () => {
                 alt="IronCore Logo"
                 className="h-10 w-10 object-cover"
               />
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+              <span className="text-2xl font-bold bg-gradient-to-r from-red-500 to-red-700 bg-clip-text text-transparent">
                 IronCore Fitness
               </span>
             </Link>
@@ -47,11 +47,11 @@ const Navbar = () => {
                 <NavLink
                   key={i}
                   to={link.to}
-                  onClick={scrollToTop}  // ✅ scrolls to top smoothly
+                  onClick={scrollToTop}  
                   className={({ isActive }) =>
                     isActive
-                      ? "px-3 py-2 rounded-md text-sm font-medium bg-gray-800 text-white transition-all"
-                      : "px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-blue-400 hover:bg-gray-800 transition-all"
+                      ? "px-3 py-2 rounded-md text-sm font-medium bg-red-600 text-white transition-all"
+                      : "px-3 py-2 rounded-md text-sm font-medium text-gray-300 hover:text-red-500 hover:bg-gray-800 transition-all"
                   }
                 >
                   {link.label}
@@ -63,7 +63,7 @@ const Navbar = () => {
             <div className="md:hidden">
               <button
                 onClick={() => setIsOpen(!isOpen)}
-                className="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-blue-500 p-2 rounded-md"
+                className="text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-red-600 p-2 rounded-md"
               >
                 <svg
                   className="h-6 w-6"
@@ -91,12 +91,12 @@ const Navbar = () => {
                     to={link.to}
                     onClick={() => {
                       setIsOpen(false);
-                      scrollToTop(); // ✅ closes menu + scrolls to top
+                      scrollToTop(); 
                     }}
                     className={({ isActive }) =>
                       isActive
-                        ? "px-3 py-2 rounded-md text-base font-medium bg-gray-800 text-white"
-                        : "px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-blue-400 hover:bg-gray-800"
+                        ? "px-3 py-2 rounded-md text-base font-medium bg-red-600 text-white"
+                        : "px-3 py-2 rounded-md text-base font-medium text-gray-300 hover:text-red-500 hover:bg-gray-800"
                     }
                   >
                     {link.label}

@@ -76,7 +76,7 @@ const Contact = () => {
       <div className="container mx-auto px-6 py-16">
         {/* Title */}
         <div className="text-center mb-16">
-          <h1 className="text-4xl font-bold bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent mb-4">
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent mb-4">
             Contact Us
           </h1>
           <p className="text-lg text-gray-300 max-w-3xl mx-auto">
@@ -87,7 +87,7 @@ const Contact = () => {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           {/* Contact Form */}
-          <div className="bg-neutral-950 rounded-xl p-8 border border-gray-800 hover:border-blue-500 transition-all duration-300">
+          <div className="bg-neutral-950 rounded-xl p-8 border border-gray-800 hover:border-red-500 transition-all duration-300">
             <h2 className="text-2xl font-semibold text-white mb-6">Get in Touch</h2>
             <form onSubmit={handleSubmit} className="space-y-6" noValidate>
               {/* Name */}
@@ -99,7 +99,7 @@ const Contact = () => {
                   placeholder="Full Name"
                   value={formData.name}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white ${
+                  className={`w-full px-4 py-3 bg-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white ${
                     errors.name ? "border-red-500" : "border-gray-800"
                   }`}
                 />
@@ -117,7 +117,7 @@ const Contact = () => {
                   placeholder="Email Address"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white ${
+                  className={`w-full px-4 py-3 bg-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white ${
                     errors.email ? "border-red-500" : "border-gray-800"
                   }`}
                 />
@@ -135,7 +135,7 @@ const Contact = () => {
                   placeholder="Phone Number"
                   value={formData.phone}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white ${
+                  className={`w-full px-4 py-3 bg-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white ${
                     errors.phone ? "border-red-500" : "border-gray-800"
                   }`}
                 />
@@ -151,7 +151,7 @@ const Contact = () => {
                   name="subject"
                   value={formData.subject}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white ${
+                  className={`w-full px-4 py-3 bg-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white ${
                     errors.subject ? "border-red-500" : "border-gray-800"
                   }`}
                 >
@@ -175,7 +175,7 @@ const Contact = () => {
                   placeholder="Your Message"
                   value={formData.message}
                   onChange={handleChange}
-                  className={`w-full px-4 py-3 bg-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 text-white ${
+                  className={`w-full px-4 py-3 bg-black border rounded-lg focus:outline-none focus:ring-2 focus:ring-red-500 text-white ${
                     errors.message ? "border-red-500" : "border-gray-800"
                   }`}
                 ></textarea>
@@ -187,7 +187,7 @@ const Contact = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-gradient-to-r from-blue-500 to-purple-600 hover:opacity-90 disabled:opacity-50 text-white font-semibold py-3 rounded-lg transition-colors duration-200"
+                className="w-full bg-gradient-to-r from-red-600 to-red-500 hover:opacity-90 disabled:opacity-50 text-white font-semibold py-3 rounded-lg transition-colors duration-200"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
@@ -196,7 +196,7 @@ const Contact = () => {
 
           {/* Contact Info */}
           <div className="space-y-8">
-            <div className="bg-neutral-950 rounded-xl p-8 border border-gray-800 hover:border-blue-500 transition-all duration-300">
+            <div className="bg-neutral-950 rounded-xl p-8 border border-gray-800 hover:border-red-500 transition-all duration-300">
               <h3 className="text-xl font-semibold text-white mb-4">Reach Us</h3>
               <ul className="space-y-3 text-gray-300">
                 <li>📍 IronCore Fitness, Main Street, Your City</li>
@@ -205,7 +205,7 @@ const Contact = () => {
               </ul>
             </div>
 
-            <div className="bg-neutral-950 rounded-xl p-8 border border-gray-800 hover:border-blue-500 transition-all duration-300">
+            <div className="bg-neutral-950 rounded-xl p-8 border border-gray-800 hover:border-red-500 transition-all duration-300">
               <h3 className="text-xl font-semibold text-white mb-4">Working Hours</h3>
               <ul className="space-y-2 text-gray-300">
                 <li>Mon - Fri: 6:00 AM - 10:00 PM</li>

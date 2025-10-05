@@ -1,9 +1,7 @@
 // pages/Gallery.jsx
-import React, { useState } from "react";
+import React from "react";
 
 const Gallery = () => {
-  const [activeFilter, setActiveFilter] = useState("all");
-
   const images = [
     {
       id: 1,
@@ -55,53 +53,23 @@ const Gallery = () => {
     },
   ];
 
-  const filters = [
-    { id: "all", label: "All" },
-    { id: "workout-areas", label: "Workout Areas" },
-    { id: "equipment", label: "Equipment" },
-    { id: "classes", label: "Classes" },
-    { id: "trainers", label: "Trainers" },
-    { id: "facilities", label: "Facilities" },
-    { id: "events", label: "Events" },
-  ];
-
-  const filteredImages =
-    activeFilter === "all"
-      ? images
-      : images.filter((image) => image.category === activeFilter);
-
   return (
     <div className="bg-black min-h-screen py-16">
       <div className="container mx-auto px-6">
         {/* Heading */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl font-bold text-white mb-4">Our Gallery</h1>
+          <h1 className="text-4xl font-bold bg-gradient-to-r from-red-600 to-red-400 bg-clip-text text-transparent mb-4">
+            Our Gallery
+          </h1>
           <p className="text-gray-400 max-w-2xl mx-auto">
-            Take a glimpse inside IronCore Fitness — where strength, passion,
+            Take a glimpse inside IronCore Fitness where strength, passion,
             and dedication come alive.
           </p>
         </div>
 
-        {/* Filter Buttons */}
-        <div className="flex flex-wrap justify-center gap-4 mb-10">
-          {filters.map((filter) => (
-            <button
-              key={filter.id}
-              onClick={() => setActiveFilter(filter.id)}
-              className={`px-5 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
-                activeFilter === filter.id
-                  ? "bg-blue-600 text-white"
-                  : "bg-gray-800 text-gray-400 hover:bg-gray-700 hover:text-white"
-              }`}
-            >
-              {filter.label}
-            </button>
-          ))}
-        </div>
-
         {/* Image Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {filteredImages.map((image) => (
+          {images.map((image) => (
             <div
               key={image.id}
               className="group relative overflow-hidden rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-800 bg-gray-900"
@@ -117,7 +85,7 @@ const Gallery = () => {
                     <p className="text-white text-lg font-semibold mb-1">
                       {image.caption}
                     </p>
-                    <span className="text-blue-400 text-sm capitalize">
+                    <span className="text-red-400 text-sm capitalize">
                       {image.category.replace("-", " ")}
                     </span>
                   </div>
@@ -127,14 +95,14 @@ const Gallery = () => {
           ))}
         </div>
 
-        {/* Empty State */}
-        {filteredImages.length === 0 && (
+        {/* Empty State (in case no images) */}
+        {images.length === 0 && (
           <div className="text-center py-16">
             <div className="text-gray-500 text-6xl mb-4">📷</div>
             <h3 className="text-xl font-semibold text-gray-300 mb-2">
               No images found
             </h3>
-            <p className="text-gray-500">Try selecting a different category</p>
+            <p className="text-gray-500">Try adding some gallery images</p>
           </div>
         )}
       </div>
