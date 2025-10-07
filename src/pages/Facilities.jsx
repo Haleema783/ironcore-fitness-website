@@ -49,7 +49,7 @@ const Facilities = () => {
 
           {/* Facilities Grid */}
           <section className="mb-20">
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {facilities.map((facility, index) => {
                 const IconComponent = facility.icon;
                 return (

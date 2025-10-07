@@ -21,14 +21,18 @@ function App() {
       <div className="App">
         <Navbar />
         
-        {/* WhatsApp floating button */}
-        <a
-          href="https://wa.me/923405542097"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <FaWhatsapp className="fixed bottom-7 right-7 text-green-500 z-50 text-[50px]" />
-        </a>
+       {/* WhatsApp floating button */}
+<a
+  href="https://wa.me/923405542097"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="fixed bottom-7 right-7 z-50"
+>
+  <div className="bg-green-500 p-3 rounded-full shadow-lg hover:bg-green-600 transition">
+    <FaWhatsapp className="text-white text-[40px]" />
+  </div>
+</a>
+
 
         {/* Routes */}
         <Routes>

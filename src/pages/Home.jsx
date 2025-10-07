@@ -82,44 +82,7 @@ const Home = () => {
           <Facilities />
         </section>
         
-        {/* Testimonials */}
-        <section className="mb-20">
-          <h2 className="text-3xl font-bold text-center text-white mb-12">
-            What Our Members Say
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {reviews.map((review, index) => (
-              <div
-                key={index}
-                className="bg-gray-900 p-6 rounded-2xl shadow-md hover:shadow-lg hover:border-red-500 transition border border-gray-800"
-              >
-                <p className="text-gray-300 mb-4 italic">"{review.text}"</p>
-
-                {/* Star Rating */}
-                <div className="flex justify-center mb-4">
-                  {Array.from({ length: 5 }, (_, i) => {
-                    if (i + 1 <= Math.floor(review.stars))
-                      return <FaStar key={i} className="text-red-500" />;
-                    if (i < review.stars)
-                      return <FaStarHalfAlt key={i} className="text-red-500" />;
-                    return <FaRegStar key={i} className="text-red-500" />;
-                  })}
-                </div>
-
-                {/* Reviewer Info */}
-                <div className="flex items-center justify-center">
-                  <FaUserCircle className="text-red-500 w-12 h-12 mr-4" />
-                  <div className="text-left">
-                    <h4 className="font-semibold text-white">
-                      {review.name}
-                    </h4>
-                    <p className="text-gray-400 text-sm">{review.role}</p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
+       
       </div>
     </div>
   );

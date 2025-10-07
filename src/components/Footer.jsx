@@ -147,16 +147,8 @@ const Footer = () => {
         </div>
       </div>
 
-      {/* Scroll to Top Button */}
-      {isVisible && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-6 left-6 bg-gradient-to-r from-red-600 to-red-800 hover:from-red-700 hover:to-red-900 text-white p-3 rounded-full shadow-lg transition-all duration-300 z-50"
-          aria-label="Scroll to top"
-        >
-          <FaArrowUp className="text-white" />
-        </button>
-      )}
+      
+      
     </footer>
   );
 };
