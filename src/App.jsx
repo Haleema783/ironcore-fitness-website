@@ -28,8 +28,8 @@ function App() {
   rel="noopener noreferrer"
   className="fixed bottom-7 right-7 z-50"
 >
-  <div className="bg-green-500 p-3 rounded-full shadow-lg hover:bg-green-600 transition">
-    <FaWhatsapp className="text-white text-[40px]" />
+  <div className="bg-green-500 p-2 rounded-full shadow-lg hover:bg-green-600 transition">
+    <FaWhatsapp className="text-white text-[25px]" />
   </div>
 </a>
 

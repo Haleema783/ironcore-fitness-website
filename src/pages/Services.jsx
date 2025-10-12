@@ -11,6 +11,7 @@ import {
   FaClock, 
   FaSpa 
 } from "react-icons/fa";
+import { FaBicycle } from "react-icons/fa6";
 
 const Services = () => {
   const services = [
@@ -45,9 +46,9 @@ const Services = () => {
       icon: <FaLock className="text-4xl text-red-500 mx-auto mb-4" />
     },
     {
-      title: "Supplement Bar",
-      description: "Protein shakes, pre-workouts, and snacks available on-site.",
-      icon: <FaBlender className="text-4xl text-red-500 mx-auto mb-4" />
+      title: "Cycling Zone",
+      description: "Boost your endurance and burn calories with our high-energy indoor cycling zone.",
+      icon: <FaBicycle className="text-4xl text-red-500 mx-auto mb-4" />
     },
     {
       title: "24/7 Access",

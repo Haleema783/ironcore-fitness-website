@@ -19,16 +19,13 @@ const Facilities = () => {
   const facilities = [
     { title: "Strength Zone", description: "Top-quality free weights, squat racks, and machines for strength training.", icon: FaDumbbell },
     { title: "Cardio Zone", description: "Modern treadmills, bikes, and ellipticals for endurance workouts.", icon: FaRunning },
-    { title: "Swimming Pool", description: "Indoor heated pool for cardio, recovery, and relaxation.", icon: FaSwimmer },
+    { title: "Lifting Machines", description: "High-performance lifting machines designed to help you build strength safely and effectively.", icon: FaDumbbell },
     { title: "Cycling Studio", description: "High-energy spin classes with immersive lighting and music.", icon: FaBicycle },
-    { title: "Sauna & Spa", description: "Relax and recover with our steam, sauna, and spa facilities.", icon: FaSpa },
     { title: "24/7 Security", description: "CCTV and secure access to ensure members’ safety at all times.", icon: FaUserShield },
-    { title: "Healthy Café", description: "Nutritious shakes, protein snacks, and post-workout meals.", icon: FaUtensils },
     { title: "Showers & Lockers", description: "Modern locker rooms with hot showers and changing space.", icon: FaShower },
     { title: "Free Wi-Fi", description: "Stay connected with high-speed internet while training.", icon: FaWifi },
     { title: "Parking Area", description: "Ample, secure parking space for cars and bikes.", icon: FaParking },
     { title: "Medical Support", description: "On-site first aid and emergency response readiness.", icon: FaHeartbeat },
-    { title: "24/7 Access", description: "Train anytime with round-the-clock access for premium members.", icon: FaClock },
   ];
 
   return (
