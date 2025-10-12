@@ -29,7 +29,7 @@ const Slider = () => {
   };
 
   return (
-    <div className="relative w-full h-96 overflow-hidden rounded-lg bg-black shadow-xl">
+    <div className="relative w-full h-140 overflow-hidden rounded-lg bg-black shadow-xl">
       {slides.map((slide, index) => (
         <div
           key={index}

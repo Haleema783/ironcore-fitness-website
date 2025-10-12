@@ -77,10 +77,7 @@ const Home = () => {
         <section className="mb-12">
           <Services />
         </section>
-        {/* Facilities */}
-        <section className="mb-20">
-          <Facilities />
-        </section>
+      
         
        
       </div>
