@@ -7,7 +7,6 @@ import About from './pages/About';
 import Services from './pages/Services';
 import Gallery from './pages/Gallery';
 import Membership from './pages/Membership';
-import Facilities from './pages/Facilities';
 import ContactUs from './pages/ContactUs';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -23,7 +22,7 @@ function App() {
         
        {/* WhatsApp floating button */}
 <a
-  href="https://wa.me/923405542097"
+  href="https://wa.me/923295425413"
   target="_blank"
   rel="noopener noreferrer"
   className="fixed bottom-7 right-7 z-50"
@@ -41,7 +40,6 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/membership" element={<Membership />} />
-          <Route path="/facilities" element={<Facilities />} />
           <Route path="/contactus" element={<ContactUs />} />
         </Routes>
 

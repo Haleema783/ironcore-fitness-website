@@ -142,13 +142,11 @@ const Footer = () => {
         <div className="border-t border-gray-800 mt-10 pt-6 text-center">
           <p className="text-gray-500 text-sm">
             &copy; {new Date().getFullYear()} IronCore Fitness. All rights
-            reserved. | Made by Apexium | +92 340 5542097
+            reserved. | Made by Apexium | +923295425413
           </p>
         </div>
       </div>
 
-      
-      
     </footer>
   );
 };

@@ -128,16 +128,22 @@ const Membership = () => {
                       {/* Join Now Button */}
                       {/* Join Now Button */}
 <div className="text-center">
-  <button 
-    onClick={() => {
-      navigate("/contactus"); 
-      window.scrollTo(0, 0); // 👈 scroll to top after navigation
+  <button
+    type="button" // prevent form submit or navigation
+    onClick={(e) => {
+      e.preventDefault(); // stop any router navigation
+      window.open(
+        "https://wa.me/923295425413?text=Hi!%20I%20want%20to%20join%20IronCore%20Fitness.",
+        "_blank"
+      );
     }}
     className="inline-block bg-gradient-to-r from-red-600 to-red-500 text-white font-semibold px-6 py-2 rounded-full shadow-md hover:shadow-lg transition duration-300"
   >
     Join Now
   </button>
 </div>
+
+
 
                     </div>
                   );
