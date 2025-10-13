@@ -1,6 +1,6 @@
 # IronCore Fitness Website
 
-![IronCore Fitness Logo](https://i.pinimg.com/736x/57/b9/a8/57b9a898242ea18f58e7286fe488a93e.jpg)
+![IronCore Fitness Logo]
 
 ## Description
 
